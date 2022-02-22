@@ -1,0 +1,28 @@
+{
+  "name": "json2ts",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "description": "transform json to typescript interface",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm,iife --global-name=json2ts --dts --clean",
+    "watch": "npm run build -- --watch src",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "CodeByZack",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^5.11.13",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "esno": "^0.14.1"
+  }
+}
