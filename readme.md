@@ -27,7 +27,7 @@ npm i json2tstool
 ### In Browser
 
 ```javascript
-<script src="./dist/index.global.js"></script>
+<script src="https://unpkg.com/json2tstool@1.0.0/dist/index.js"></script>
 
 const jsonStr = `{ "key" : 2 }`;
 
