@@ -165,6 +165,5 @@ var json2ts = (jsonStr, interfaceName = "ISomeInterface") => {
 };
 var src_default = json2ts;
 export {
-  src_default as default,
-  json2ts
+  src_default as default
 };

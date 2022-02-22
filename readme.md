@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to json2ts 👋</h1>
+<h1 align="center">Welcome to json2typescript 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/CodeByZack/json2ts#readme" target="_blank">
@@ -15,7 +15,14 @@
 
 [json2tsDEMO](https://json2ts.vercel.app/)
 
-## 引入
+## 安装
+
+```
+npm i json2typescript
+
+```
+
+## 使用
 
 ### In Browser
 
@@ -24,14 +31,14 @@
 
 const jsonStr = `{ "key" : 2 }`;
 
-json2ts.default(jsonStr);
+json2typescript.default(jsonStr);
 
 ```
 
 ### ES Module
 
 ```javascript
-import json2ts from 'json2ts';
+import json2ts from 'json2typescript';
 
 const jsonStr = `{ "key" : 2 }`;
 
@@ -42,7 +49,7 @@ json2ts(jsonStr);
 ### NodeJS
 
 ```javascript
-const json2ts = require('json2ts');
+const json2ts = require('json2typescript');
 
 const jsonStr = `{ "key" : 2 }`;
 

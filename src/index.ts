@@ -163,7 +163,7 @@ const generateInterface = (node: INode) => {
   return '';
 };
 
-export const json2ts = (jsonStr: string, interfaceName = 'ISomeInterface') => {
+const json2ts = (jsonStr: string, interfaceName = 'ISomeInterface') => {
   try {
     const jsonObj = JSON.parse(jsonStr);
     const resultStr = traves(jsonObj, interfaceName);

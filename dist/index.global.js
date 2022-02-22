@@ -1,4 +1,4 @@
-var json2ts = (() => {
+var json2typescript = (() => {
   var __defProp = Object.defineProperty;
   var __defProps = Object.defineProperties;
   var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -42,8 +42,7 @@ var json2ts = (() => {
   // src/index.ts
   var src_exports = {};
   __export(src_exports, {
-    default: () => src_default,
-    json2ts: () => json2ts
+    default: () => src_default
   });
   var PrimitiveTypes = ["string", "number", "boolean", "undefined", "null"];
   var GenInterface = class {

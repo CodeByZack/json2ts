@@ -1,5 +1,5 @@
 {
-  "name": "json2ts",
+  "name": "json2typescript",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "description": "transform json to typescript interface",
@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm,iife --global-name=json2ts --dts --clean",
+    "build": "tsup src/index.ts --format cjs,esm,iife --global-name=json2typescript --dts --clean",
     "watch": "npm run build -- --watch src",
     "prepublishOnly": "npm run build"
   },

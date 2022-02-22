@@ -41,8 +41,7 @@ var __toCommonJS = /* @__PURE__ */ ((cache) => {
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  default: () => src_default,
-  json2ts: () => json2ts
+  default: () => src_default
 });
 var PrimitiveTypes = ["string", "number", "boolean", "undefined", "null"];
 var GenInterface = class {
@@ -191,6 +190,4 @@ var json2ts = (jsonStr, interfaceName = "ISomeInterface") => {
 var src_default = json2ts;
 module.exports = __toCommonJS(src_exports);
 // Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
-  json2ts
-});
+0 && (module.exports = {});
