@@ -13,7 +13,7 @@
 
 ## demo 演示
 
-[json2tsDEMO](https://json2ts.vercel.app/)
+[json2tsDEMO](https://json2ts-plum.vercel.app/)
 
 ## 安装
 
