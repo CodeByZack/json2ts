@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to json2typescript 👋</h1>
+<h1 align="center">Welcome to json2tstool 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/CodeByZack/json2ts#readme" target="_blank">
@@ -18,7 +18,7 @@
 ## 安装
 
 ```
-npm i json2typescript
+npm i json2tstool
 
 ```
 
@@ -31,14 +31,14 @@ npm i json2typescript
 
 const jsonStr = `{ "key" : 2 }`;
 
-json2typescript.default(jsonStr);
+json2tstool.default(jsonStr);
 
 ```
 
 ### ES Module
 
 ```javascript
-import json2ts from 'json2typescript';
+import json2ts from 'json2tstool';
 
 const jsonStr = `{ "key" : 2 }`;
 
@@ -49,7 +49,7 @@ json2ts(jsonStr);
 ### NodeJS
 
 ```javascript
-const json2ts = require('json2typescript');
+const json2ts = require('json2tstool');
 
 const jsonStr = `{ "key" : 2 }`;
 
