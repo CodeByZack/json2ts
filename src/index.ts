@@ -122,22 +122,11 @@ const traves = (jsonObj, topName) => {
     }
   };
   dfs(jsonObj, topName);
-  console.log(nodes);
   const interfaceArr = nodes.map(generateInterface);
   return interfaceArr.join('\n\n');
 };
 
 const generateInterface = (node: INode) => {
-  if (node.type === 'array') {
-    const name = getInterfaceName(node.key, 'array');
-    GenInterfaceInstance.reset();
-    GenInterfaceInstance.start(name);
-    const types = checkArrayItemTypes(node.value as any[], node.key);
-    GenInterfaceInstance.append(node.key, `(${types.join('|')})[]`);
-    const result = GenInterfaceInstance.end();
-    GenInterfaceInstance.reset();
-    return result;
-  }
 
   if (node.type === 'object') {
     const name = getInterfaceName(node.key, 'object');
@@ -163,7 +152,7 @@ const generateInterface = (node: INode) => {
   return '';
 };
 
-const json2ts = (jsonStr: string, interfaceName = 'ISomeInterface') => {
+const json2ts = (jsonStr: string, interfaceName = 'SomeInterface') => {
   try {
     const jsonObj = JSON.parse(jsonStr);
     const resultStr = traves(jsonObj, interfaceName);

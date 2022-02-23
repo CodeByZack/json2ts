@@ -3,3 +3,7 @@ demo
 src
 
 pnpm-lock.yaml
+
+test
+
+coverage
