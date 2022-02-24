@@ -20,7 +20,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "release": "npx bumpp --tag --commit --push"
   },
   "keywords": [],
   "author": "CodeByZack",
