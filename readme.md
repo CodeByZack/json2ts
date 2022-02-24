@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> transform json to typescript interface
+> 转换JSON字符串为TypeScript Interface字符串
 
 ## demo 演示
 
@@ -56,6 +56,20 @@ const jsonStr = `{ "key" : 2 }`;
 json2ts(jsonStr);
 ```
 
+### 命令行
+
+```bash
+
+# 输入json字符串
+json2ts -i '{ "key" : 2 }'
+
+# 指定输入文件地址
+json2ts -f 'path to your json'
+
+# 指定输出文件地址
+json2ts -o 'a.ts'
+
+```
 
 ## 支持一下
 
