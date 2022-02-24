@@ -26,6 +26,9 @@
   "keywords": [],
   "author": "CodeByZack",
   "license": "ISC",
+  "dependencies": {
+    "zx": "^5.1.0"
+  },
   "devDependencies": {
     "@vitest/ui": "^0.5.3",
     "c8": "^7.11.0",
@@ -33,7 +36,6 @@
     "tsup": "^5.11.13",
     "typescript": "^4.5.5",
     "vitest": "^0.5.3",
-    "zx": "^5.1.0",
     "commander": "^9.0.0"
   }
 }
